@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="ja" >
 <head>
   <meta charset="UTF-8">
   <title>いろはのサイト</title>
@@ -9,6 +9,15 @@
 <meta property="og:title" content="いろはのサイト"/>
 <meta property="og:description" content="いろは(iroha_nano)のトップページです"/>
 <meta property="og:image" content="https://kmcstrelka.github.io/irohanano/icon/327_7wEEPQQI.png"/>
+<script>
+window.onload = function(){
+  var randomList = new Array(
+  "./icon/dogicon.png",
+  "./icon/327_7wEEPQQI.png");
+var num = Math.floor(Math.random() * randomList.length);
+document.body.style.backgroundImage = "url(" + randomList[num] + ")";
+}
+</script>
   <link rel="stylesheet" href="./style.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
